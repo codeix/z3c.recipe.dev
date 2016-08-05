@@ -21,7 +21,7 @@ import zc.buildout
 import zc.recipe.egg
 import pkg_resources
 import ZConfig.schemaless
-import cStringIO
+from six.moves import cStringIO as StringIO
 
 server_types = {
     # name     (module,                  http-name)

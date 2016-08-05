@@ -30,14 +30,14 @@ setup(
     author_email = 'zope-dev@zope.org',
     description = 'Zope3 development server setup recipes',
     long_description=(
-        read('README.txt')
+        read('README.rst')
         + '\n\n' +
         'Detailed Documentation\n'
         '**********************'
         + '\n\n' +
-        read('src', 'z3c', 'recipe', 'dev', 'README.txt')
+        read('src', 'z3c', 'recipe', 'dev', 'README.rst')
         + '\n\n' +
-        read('CHANGES.txt')
+        read('CHANGES.rst')
         ),
     license = 'ZPL 2.1',
     keywords = 'zope3 z3c dev recipe',
@@ -63,6 +63,7 @@ setup(
         ),
     install_requires = [
         'ZConfig >=2.4a5',
+        'six',
         'setuptools',
         'zc.buildout',
         'zc.recipe.egg',
